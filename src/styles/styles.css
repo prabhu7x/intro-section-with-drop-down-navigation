@@ -1,0 +1,306 @@
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Epilogue;
+}
+
+body {
+  min-height: 100vh;
+  background-color: hsl(0, 0%, 100%);
+  font-family: "Epilogue", sans-serif;
+  line-height: 1.3;
+  position: relative;
+  font-weight: 500;
+  color: hsl(0, 0%, 41%);
+  text-align: center;
+}
+body .overlay {
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  background-color: hsla(0, 0%, 8%, 0.5);
+  transition: all 0.3s linear;
+}
+
+body.nav-open .overlay {
+  display: initial;
+  opacity: 1;
+}
+
+header {
+  padding: 1.3rem 1rem;
+  display: flex;
+  align-items: center;
+}
+header .menu {
+  position: fixed;
+  top: 1.3rem;
+  right: 1rem;
+  z-index: 2;
+  cursor: pointer;
+}
+header .menu .close-menu {
+  display: none;
+}
+header nav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 65vw;
+  height: 100vh;
+  background-color: white;
+  transform: translateX(100%);
+  transition: all 0.3s ease-in;
+  display: flex;
+  text-align: left;
+  z-index: 1;
+}
+header nav ul {
+  list-style-type: none;
+}
+header nav a {
+  color: hsl(0, 0%, 41%);
+  text-decoration: none;
+}
+header nav .nav-links img {
+  padding-left: 0.5rem;
+  padding-bottom: 0.2rem;
+}
+header nav .nav-links .nav-link {
+  cursor: pointer;
+  position: relative;
+  padding: 0.5rem 1rem;
+}
+header nav .nav-links .nav-link:hover {
+  color: hsl(0, 0%, 8%);
+}
+header nav .nav-links .nav-link > a {
+  width: 100%;
+  padding: 0.5rem 1.5rem;
+  display: block;
+  transition: all 0.3s ease-in;
+}
+header nav .nav-links .nav-link > a:hover {
+  background-color: hsla(0, 0%, 88%, 0.5);
+}
+header nav .nav-links .nav-link a span {
+  margin-right: 0.75rem;
+}
+header nav .dropdown-list {
+  display: none;
+  overflow-y: hidden;
+}
+header nav .dropdown-list li {
+  padding: 0.5rem 1rem;
+}
+header nav .link-open {
+  display: block;
+}
+header nav .registration {
+  display: flex;
+  flex-direction: column;
+}
+header nav .registration button {
+  padding: 1rem;
+  margin: 0.5rem;
+  background-color: white;
+  color: hsl(0, 0%, 41%);
+  border: none;
+  font-weight: 700;
+  border-radius: 14px;
+}
+header nav .registration button:hover {
+  color: hsl(0, 0%, 8%);
+}
+header nav .registration button:nth-child(2) {
+  border: solid 1px hsl(0, 0%, 41%);
+}
+header nav .registration button:nth-child(2):hover {
+  border: solid 1px hsl(0, 0%, 8%);
+}
+
+header.open .open-menu {
+  display: none;
+}
+
+header.open .close-menu {
+  display: initial;
+}
+
+header.open nav {
+  transform: translateX(0%);
+}
+
+.features li:nth-child(1)::before {
+  content: url("../images/icon-todo.svg");
+  padding: 1rem 1rem 1rem 0;
+}
+
+.features li:nth-child(2)::before {
+  content: url("../images/icon-calendar.svg");
+  padding: 1rem 1rem 1rem 0;
+}
+
+.features li:nth-child(3)::before {
+  content: url("../images/icon-reminders.svg");
+  padding: 1rem 1rem 1rem 0;
+}
+
+.features li:nth-child(4)::before {
+  content: url("../images/icon-planning.svg");
+  padding: 1rem 1rem 1rem 0;
+}
+
+main section button {
+  align-self: flex-start;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 1rem 2rem;
+  border-radius: 12px;
+  background-color: hsl(0, 0%, 8%);
+  color: hsl(0, 0%, 98%);
+  font-weight: 700;
+  font-size: 1.1rem;
+  border: solid 1px hsl(0, 0%, 8%);
+  margin-bottom: 5rem;
+}
+
+@media (min-width: 275px) and (max-width: 875px) {
+  header nav {
+    display: flex;
+    flex-direction: column;
+    padding-top: 3rem;
+  }
+  header nav .dropdown-link {
+    background-color: white;
+  }
+  header nav .dropdown-link:hover {
+    background-color: hsla(0, 0%, 88%, 0.5);
+  }
+  main picture img {
+    width: 100%;
+  }
+  main section h1 {
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: hsl(0, 0%, 8%);
+    padding: 2rem 0;
+  }
+  main section p {
+    font-weight: 500;
+    padding: 0 1rem;
+  }
+  main section button {
+    margin: 2.4rem 0;
+    padding: 1rem 1.4rem;
+    border-radius: 15px;
+  }
+  footer {
+    padding: 2rem 0;
+  }
+}
+@media screen and (min-width: 1000px) {
+  body .overlay {
+    display: none;
+  }
+  header {
+    display: flex;
+    align-items: center;
+    padding: initial;
+  }
+  header .logo {
+    padding: 1rem;
+  }
+  header .menu {
+    display: none;
+  }
+  header nav {
+    position: initial;
+    transform: initial;
+    height: initial;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color: initial;
+    margin-bottom: 0.7rem;
+  }
+  header nav .nav-links {
+    display: flex;
+    flex-direction: row;
+  }
+  header nav .nav-links .dropdown-list {
+    position: absolute;
+    top: 100%;
+    right: -9%;
+    width: -moz-max-content;
+    width: max-content;
+    background-color: hsl(0, 0%, 98%);
+    box-shadow: 0 1rem 1rem 0 rgba(0, 0, 0, 0.2);
+    border-radius: 9px;
+  }
+  header nav .registration {
+    display: flex;
+    flex-direction: row;
+  }
+  header nav .registration button {
+    padding: 0.8rem 1.3rem;
+  }
+  header nav .nav-link {
+    display: flex;
+    align-items: center;
+  }
+  main {
+    display: flex;
+    flex-direction: row-reverse;
+    -moz-column-gap: 7.5rem;
+         column-gap: 7.5rem;
+    padding: 2rem 9rem;
+    text-align: left;
+  }
+  main picture img {
+    width: 470px;
+  }
+  main section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  main section h1 {
+    font-size: 5rem;
+    color: hsl(0, 0%, 8%);
+    font-weight: 900;
+    padding-top: 4rem;
+  }
+  main section p {
+    line-height: 2rem;
+    padding-right: 5rem;
+    padding-bottom: 2rem;
+  }
+  main section button {
+    align-self: flex-start;
+    width: -moz-fit-content;
+    width: fit-content;
+    padding: 1rem 2rem;
+    border-radius: 12px;
+    font-weight: 700;
+    font-size: 1.1rem;
+    border: solid 1px hsl(0, 0%, 8%);
+    margin-bottom: 5rem;
+    transition: all 0.3s ease-in;
+  }
+  main section button:hover {
+    background-color: hsl(0, 0%, 98%);
+    color: hsl(0, 0%, 8%);
+  }
+  main section .clients {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}/*# sourceMappingURL=styles.css.map */
