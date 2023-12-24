@@ -22,7 +22,7 @@ function Header() {
   return (
     <header className={`${toggleMenu ? 'open' : null}`}>
     <a href="#" className='logo'>
-      <img onClick={handler}  className='logo' src={logo} alt="snap" />
+      <img className='logo' src={logo} alt="snap" />
     </a>
       <div className='menu' onClick={()=>setToggleMenu(!toggleMenu)}>
         <img src={menu} alt="close"  className='open-menu'/>
