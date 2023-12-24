@@ -1,9 +1,25 @@
-# React + Vite
+# Frontend Mentor - Intro section with dropdown navigation
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![Design preview for the Intro section with dropdown navigation coding challenge](./design/desktop-preview.jpg)
 
-Currently, two official plugins are available:
+## Welcome! 👋
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-# shopping-cart
+Thanks for checking out this front-end coding challenge.
+
+[live url](https://prabhu7x.github.io/intro-section-with-drop-down-navigation/)
+
+Include a link to the live demo if applicable.
+Technologies Used
+
+    HTML
+    CSS
+    ReactJS
+
+Installation
+
+![GitHub Repo Clones](https://tokei.sh/badge/github/prabhu7x/https://github.com/prabhu7x/intro-section-with-drop-down-navigation.git)
+
+
+If you have any suggestions or improvements, feel free to contribute!
+Acknowledgements
+
