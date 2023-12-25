@@ -8,9 +8,9 @@ Thanks for checking out this front-end coding challenge.
 
 [live url](https://prabhu7x.github.io/intro-section-with-drop-down-navigation/)
 
-    HTML
-    CSS
-    ReactJS
+- HTML
+- CSS
+- ReactJS
 
 Installation
 
