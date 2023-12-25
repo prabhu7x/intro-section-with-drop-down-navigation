@@ -16,6 +16,9 @@ Installation
 
 ![GitHub Repo Clones](https://tokei.sh/badge/github/prabhu7x/https://github.com/prabhu7x/intro-section-with-drop-down-navigation.git)
 
+```
+https://tokei.sh/badge/github/prabhu7x/https://github.com/prabhu7x/intro-section-with-drop-down-navigation.git
+```
 
 If you have any suggestions or improvements, feel free to contribute!
 Acknowledgements
