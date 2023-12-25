@@ -8,9 +8,6 @@ Thanks for checking out this front-end coding challenge.
 
 [live url](https://prabhu7x.github.io/intro-section-with-drop-down-navigation/)
 
-Include a link to the live demo if applicable.
-Technologies Used
-
     HTML
     CSS
     ReactJS
